@@ -810,6 +810,18 @@ require('lazy').setup({
       styles = {
         comments = {},
       },
+      integrations = {
+        telescope = {
+          enabled = true,
+        },
+        fzf = true,
+        mason = true,
+        nvimtree = true,
+        treesitter_context = true,
+        treesitter = true,
+        which_key = true,
+        gitsigns = true,
+      },
     },
     init = function()
       vim.cmd.colorscheme 'catppuccin-mocha'
@@ -826,7 +838,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = true,
-        theme = 'auto',
+        theme = 'catppuccin',
         component_separators = { left = '', right = '' },
         section_separators = { left = '', right = '' },
         disabled_filetypes = {
